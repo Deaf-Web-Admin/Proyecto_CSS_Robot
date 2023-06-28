@@ -1,0 +1,23 @@
+.robotito {
+    position: absolute;
+    width: 570px;
+    height: 591px;
+    background-image: url("2282x591.png");
+    -webkit-animation: flap 1s steps(4) infinite alternate-reverse, fly 5s linear infinite;
+         animation: flap 1s steps(4) infinite alternate-reverse, fly 5s linear infinite;
+         left:-50%; top:0%;
+}
+@-webkit-keyframes flap {
+    from { background-position:    -2282px; }
+      to { background-position: 2282px; }
+}
+@-webkit-keyframes fly {
+    from {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    to {
+      -webkit-transform: translate(2000px, 0px);
+      transform: translate(2000px, 0px);
+    }
+  }
